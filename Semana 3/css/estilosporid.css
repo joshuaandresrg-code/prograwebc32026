@@ -1,0 +1,22 @@
+p {
+  background-color: blue;
+  color: white;
+  text-align: right;
+}
+h1 {
+  background-color: darkblue;
+  color: #f50f0f8e;
+}
+a {
+  background-color: darkblue;
+  color: white;
+}
+
+#parrafo2 {
+  background-color: green;
+}
+
+#lista {
+  background-color: aqua;
+  font-family: Helvetica;
+}

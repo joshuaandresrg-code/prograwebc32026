@@ -1,6 +1,21 @@
+<<<<<<< HEAD
   p{
             background-color: blue;
         }
         h1{
             background-color: red;
         }
+=======
+p {
+  background-color: blue;
+  color: white;
+}
+h1 {
+  background-color: darkblue;
+  color: #f50f0f8e;
+}
+a {
+  background-color: darkblue;
+  color: white;
+}
+>>>>>>> 5d63dc81fa46015b02f8795a1a017b1a96df17b7

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS v5.3.8 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" aria-current="page"
+              >Active link</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://paginas-web-cr.com/Api/form/consultarcurso.php"
+              target="_blank"
+              >Mostrar Cursos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="http://127.0.0.1:20021/Semana%206/curso.html"
+              target="_blank"
+              >Crear Cursos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="http://127.0.0.1:20021/Semana%206/editarcurso.html"
+              target="_blank"
+              >Editar Cursos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="http://127.0.0.1:20021/Semana%206/eliminarcurso.html"
+              target="_blank"
+              >Eliminar Cursos</a
+            >
+          </li>
+        </ul>
+      </header>
+      <main>
+        <div class="container">
+          <h1>Editar Curso</h1>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#modalId"
+          >
+            Cargar Editar Curso
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="modalId"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    Modal Editar Curso
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <form
+                      action="https://paginas-web-cr.com/Api/form/actualizarcurso.php"
+                      method="post"
+                    >
+                      <div class="mb-3">
+                        <label for="" class="form-label">Id</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="id"
+                          id="id"
+                          aria-describedby="helpId"
+                          placeholder="Ingrese el nombre del curso"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="" class="form-label">Nombre</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="nombre"
+                          id="nombre"
+                          aria-describedby="helpId"
+                          placeholder="Ingrese el nombre del curso"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="" class="form-label">Descripcion</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="descripcion"
+                          id="descripcion"
+                          aria-describedby="helpId"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="" class="form-label">Tiempo</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="tiempo"
+                          id="tiempo"
+                          aria-describedby="helpId"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="" class="form-label">Usuario</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="usuario"
+                          id="usuario"
+                          aria-describedby="helpId"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="" class="form-label">return_url</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="return_url"
+                          id="return_url"
+                          aria-describedby="helpId"
+                          placeholder=""
+                          required
+                          value="http://127.0.0.1:20021/Semana%206/editarcurso.html"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <button type="submit" class="btn btn-success">
+                          Enviar
+                        </button>
+                        <button type="reset" class="btn btn-danger">
+                          Reset
+                        </button>
+                      </div>
+                      <p>
+                        Actualizar Curso Método: POST id nombre descripcion
+                        tiempo usuario return_url
+                        https://paginas-web-cr.com/Api/form/actualizarcurso.php
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            var modalId = document.getElementById("modalId");
+
+            modalId.addEventListener("show.bs.modal", function (event) {
+              // Button that triggered the modal
+              let button = event.relatedTarget;
+              // Extract info from data-bs-* attributes
+              let recipient = button.getAttribute("data-bs-whatever");
+
+              // Use above variables to manipulate the DOM
+            });
+          </script>
+        </div>
+
+        <div class="container">
+          <iframe
+            src="https://paginas-web-cr.com/Api/form/consultarcurso.php"
+            frameborder="0"
+            width="100%"
+            height="1000px"
+          ></iframe>
+        </div>
+      </main>
+      <footer>
+        <!-- place footer here -->
+      </footer>
+    </div>
+
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

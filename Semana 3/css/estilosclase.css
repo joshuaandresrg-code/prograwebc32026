@@ -1,0 +1,24 @@
+.fondoazul {
+  background-color: blue;
+}
+.fondorojo {
+  background-color: red;
+}
+.fondoverde {
+  background-color: green;
+}
+.letranegra {
+  color: black;
+}
+.letrablanca {
+  color: white;
+}
+.letraamarilla {
+  color: yellow;
+}
+.letragrande {
+  font-size: xx-large;
+}
+.letrapeque {
+  font-size: x-small;
+}

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campos de formulario</title>
+  </head>
+  <body>
+    <div>
+      <h1>Hypervinculos == Menu</h1>
+      <a href="imagenes.html">Imagenes</a>
+      <a href="listas.html">Listas</a>
+      <a href="encabezados.html">Encabezados</a>
+      <a href="parrafo.html">Parrafo</a>
+      <a href="tablas.html">Tablas</a>
+      <a href="iframe.html">Iframe</a>
+      <a href="contenedores.html">Contenedores</a>
+      <a href="https://www.google.com/">Google</a>
+      <a href="https://www.youtube.com/">Youtube</a>
+    </div>
+    <form>
+      <label for="name">Nombre:</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        required
+        placeholder="Escribe tu nombre aqui..."
+      />
+      <br /><br />
+      <label for="email">Correo electrónico:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="Escribe tu correo electronico aqui..."
+      />
+      <br /><br />
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" required />
+      <br /><br />
+      <label for="numero">Numero:</label>
+      <input
+        type="number"
+        id="numero"
+        name="numero"
+        required
+        placeholder="Escribe tu numero aqui..."
+      />
+      <br /><br />
+      <label for="edad">Edad:</label>
+      <input
+        type="number"
+        id="edad"
+        name="edad"
+        required
+        placeholder="Escribe tu edad aqui..."
+      />
+      <br /><br />
+      <label for="temas">Temas de interes:</label>
+      <input type="checkbox" id="temas" name="temas" value="tema1" /> Tema 1
+      <input type="checkbox" id="temas" name="temas" value="tema2" /> Tema 2
+      <input type="checkbox" id="temas" name="temas" value="  tema3" /> Tema 3
+      <br /><br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br /><br />
+
+      <label for="color">Lista desplegable:</label>
+      <select id="color" name="color" required>
+        <option value="">Selecciona un color</option>
+        <option value="rojo">Rojo</option>
+        <option value="verde">Verde</option>
+        <option value="azul">Azul</option>
+      </select>
+      <br /><br />
+
+      <label for="color">Estado Civil:</label>
+
+      <input
+        type="radio"
+        id="soltero"
+        name="estado_civil"
+        value="soltero"
+        required
+      />
+      Soltero
+      <input
+        type="radio"
+        id="casado"
+        name="estado_civil"
+        value="casado"
+        required
+      />
+      Casado
+      <input
+        type="radio"
+        id="divorciado"
+        name="estado_civil"
+        value="divorciado"
+        required
+      />
+      Divorciado <br /><br />
+
+      <label for="direccion">Direccion:</label>
+      <input
+        type="text"
+        id="direccion"
+        name="direccion"
+        required
+        placeholder="Escribe tu direccion aqui..."
+      />
+      <textarea
+        id="direccion"
+        name="direccion"
+        rows="2"
+        cols="20"
+        placeholder="Escribe tu direccion aqui..."
+      >
+      </textarea>
+      <br /><br />
+
+      <label for="archivo">Archivo:</label>
+      <input type="file" id="archivo" name="archivo" required />
+      <br /><br />
+
+      <label for="color">Colores</label>
+      <input type="color" id="color" name="color" required />
+
+      <br /><br />
+
+      <label for="fecha">Fecha y hora:</label>
+      <input type="datetime-local" id="fecha" name="fecha" required />
+
+      <input
+        type="hidden"
+        id="oculto"
+        name="oculto"
+        value="Dejar un mensaje por secreto"
+        required
+      />
+      <br /><br />
+      <label for="rango">Rango:</label>
+      <input type="range" id="rango" name="rango" required />
+      <br /><br />
+      <label for="imagen">Imagen:</label>
+      <input type="image" id="imagen" name="imagen" required />
+      <br /><br />
+
+      <label for="tel">Teléfono:</label>
+      <input type="tel" id="tel" name="tel" required />
+      <br /><br />
+
+      <label for="mes">Mes:</label>
+      <input type="month" id="mes" name="mes" required />
+      <br /><br />
+      <label for="tiempo">Tiempo:</label>
+      <input type="time" id="tiempo" name="tiempo" required />
+      <br /><br />
+      <label for="url">url:</label>
+      <input type="url" id="url" name="url" required />
+      <br /><br />
+      <label for="week">Semana:</label>
+      <input type="week" id="week" name="week" required />
+      <br /><br />
+
+      <br /><br />
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Restablecer" />
+      <button type="button">Botones</button>
+      <br />
+    </form>
+  </body>
+</html>
