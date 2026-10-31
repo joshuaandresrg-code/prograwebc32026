@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Nueva Era</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <h1>Hotel Nueva Era</h1>
+    <p>Aquí puedes consultar hoteles, crear nuevos hoteles,actualizar la informacion de un hotel y desactivar un hotel.</p>
+  </header>
+
+  <main>
+    <section class="tarjeta">
+      <h2>Lista de Hoteles</h2>
+      <button type="button" id="btnCargar">Cargar Hoteles</button>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="contenidoTabla">
+          <!-- Aquí insertaremos los hoteles con JavaScript -->
+        </tbody>
+      </table>
+    </section>
+    <!-- Formulario para Crear Hotel -->
+    <section class="tarjeta">
+      <h2>Crear Hotel</h2>
+      <form id="formCrear" class="formulario">
+        <label>Nombre
+          <input type="text" id="crearNombre" required>
+        </label>
+        <label>Descripción
+          <input type="text" id="crearDescripcion" required>
+        </label>
+        <button type="submit">Guardar Hotel</button>
+      </form>
+    </section>
+
+    <!-- Formulario para Actualizar Hotel -->
+    <section class="tarjeta">
+      <h2>Actualizar Hotel</h2>
+      <form id="formActualizar" class="formulario">
+        <label>ID Hotel
+          <input type="number" id="actId" required>
+        </label>
+        <label>Nombre
+          <input type="text" id="actNombre" required>
+        </label>
+        <label>Descripción
+          <input type="text" id="actDescripcion" required>
+        </label>
+        <label>Estado
+          <input type="text" id="actEstado" placeholder="Activo / Inactivo" required>
+        </label>
+        <button type="submit">Guardar Cambios</button>
+      </form>
+    </section>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>

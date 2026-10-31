@@ -10,3 +10,4 @@ app.use(express.static(path.join(__dirname, "public")));
 app.listen(PORT, () => {
     console.log(`Servidor activo http://localhost:${PORT}`);
 });
+
